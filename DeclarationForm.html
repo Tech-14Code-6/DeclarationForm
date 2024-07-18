@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAHAMAS CUSTOM DECLARATION FORM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .container {
+            width: 100%;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-line {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+
+        .textarea-line {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 100%;
+            resize: none;
+            height: 50px;
+        }
+
+        .signature-section {
+            margin-top: 20px;
+        }
+
+        .signature-section div {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .signature-section .input-line {
+            width: 45%;
+        }
+
+        .input-container {
+            position: relative;
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .placeholder-text {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            transform: translateY(4px);
+        }
+
+        .passenger-stage-content {
+            white-space: pre-line;
+        }
+
+        .blank-line {
+            display: inline-block;
+            width: 100%;
+            border-bottom: 1px solid black;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div>
+                <h1>BAHAMAS CUSTOMS DEPARTMENT</h1>
+                <h2>AIRCRAFT GENERAL DECLARATION</h2>
+                <h3>(OUTWARD/INWARD)</h3>
+            </div>
+        </div>
+        <form>
+            <div>
+                <label>Owner or Operator</label>
+                <input type="text" class="input-line" style="width: 84%;">
+            </div>
+            <br>
+            <div>
+                <label>Marks of Nationality and Registration on</label>
+                <input type="text" class="input-line" style="width: 20%;">
+                <label>Flight No.</label>
+                <input type="text" class="input-line" style="width: 15%;">
+                <label>Date</label>
+                <input type="text" class="input-line" style="width: 20%;">
+            </div>
+            <br>
+            <div>
+                <div class="input-container">
+                    <label>Depart from</label>
+                    <input type="text" class="input-line">
+                    <span class="placeholder-text">(place)</span>
+                </div>
+                <div class="input-container">
+                    <label>Arrive at</label>
+                    <input type="text" class="input-line">
+                    <span class="placeholder-text">(place)</span>
+                </div>
+            </div>
+            <br><br>
+            <h3>FLIGHT ROUTING</h3>
+            <p style="text-align: center;">("Place column always to list origin every en-route stop and destination")
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>PLACE</th>
+                        <th>TOTAL NUMBER OF CREW</th>
+                        <th>NUMBER OF PASSENGERS ON THIS STAGE</th>
+                        <th>CARGO MANIFEST SHEETS ATTACHED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="6" class="passenger-stage-content">
+                            Departure place
+                            Embarking <div class="blank-line" style="width: 60%;"></div>
+                            Through on same flight<br>
+                            Arrival place
+                            Disembarking <div class="blank-line" style="width: 60%;"></div>
+                            Through on same flight
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <label>Declaration of Health</label>
+                <br><br>
+            </div>
+            <div>
+                <label>Persons on board known to be suffering from illness other than airsikness or the effects of accidents,as well as those cause of illness disembarked during the flight.</label>
+                <textarea class="textarea-line"></textarea>
+                <textarea class="textarea-line"></textarea>
+                <textarea class="textarea-line"></textarea>
+                <label>Any other conditions on board which may lead to the spread of disease</label>
+                <textarea class="textarea-line"></textarea>
+                <textarea class="textarea-line"></textarea>
+                <textarea class="textarea-line"></textarea>
+            </div>
+            <div>
+                <label>Details of each disinfecting or sanitary treatment (date, place, time, method) during the flight
+                    if no disinfecting has been carried out during the flight, give details of most recent
+                    disinfecting</label>
+                <textarea class="textarea-line"></textarea>
+                <textarea class="textarea-line"></textarea>
+                <textarea class="textarea-line"></textarea>
+            </div>
+            <div class="signature-section">
+                <div style="display: flex; justify-content: flex-end;">
+                    <label>Signed</label>
+                    <input type="text" class="input-line" style="width: auto;">
+                </div>
+                <div style="text-align: right; margin-top: 8px;">
+                    <label>Crew member responsible</label>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
